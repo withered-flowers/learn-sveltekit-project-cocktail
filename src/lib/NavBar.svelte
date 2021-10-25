@@ -3,7 +3,7 @@
 	import { faGithub } from '@fortawesome/free-brands-svg-icons';
 </script>
 
-<div class="navbar mb-2 shadow-lg bg-neutral text-neutral-content rounded-box">
+<div class="navbar mb-2 shadow-lg bg-neutral text-neutral-content rounded-box" data-theme="pastel">
 	<div class="flex-none px-2 mx-2">
 		<span class="text-lg font-bold">
 			<a href="/"> Project Cocktail - SvelteKit </a>
@@ -16,8 +16,11 @@
 		</div>
 	</div>
 	<div class="flex-none">
-		<button class="btn btn-square btn-ghost px-2 mx-2">
-			<Fa icon={faGithub} size="1.5x" />
-		</button>
+		<a
+			class="btn btn-square btn-ghost px-2 mx-2"
+			href="https://github.com/withered-flowers/learn-sveltekit-project-cocktail"
+		>
+			<Fa icon={faGithub} size="2x" />
+		</a>
 	</div>
 </div>
