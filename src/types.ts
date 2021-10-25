@@ -8,4 +8,5 @@ export type DrinkType = {
 	instructions: string;
 	ingredients: IngredientType[];
 	thumbnail: string;
+	category: string;
 };
