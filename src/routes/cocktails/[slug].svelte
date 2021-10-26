@@ -38,6 +38,10 @@
 	export let selectedDrink;
 </script>
 
-<div class="grid grid-cols-6 gap-4 pt-4">
-	<CocktailCard drinkState={selectedDrink} />
+<div class="container min-w-full mx-auto text-center justify-center py-4">
+	<a class="btn btn-secondary btn-outline" href="/cocktails">Back to List</a>
+
+	<div class="grid grid-cols-6 gap-4 pt-4">
+		<CocktailCard drinkState={selectedDrink} />
+	</div>
 </div>
