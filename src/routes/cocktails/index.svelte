@@ -13,12 +13,11 @@
 
 <script lang="ts">
 	export let drinksProp: DrinkType[];
-	let drinksState: DrinkType[] = drinksProp;
 </script>
 
 <div class="container mx-auto">
-	<div class="grid grid-cols-3 gap-4">
-		{#each drinksState as drink}
+	<div class="grid grid-cols-4 gap-4">
+		{#each drinksProp as drink}
 			<div class="card text-center shadow-2xl bg-gray-100">
 				<figure class="px-10 pt-10">
 					<img src={drink.thumbnail} alt={drink.name} class="rounded-xl" />
@@ -27,7 +26,7 @@
 					<h2 class="card-title">{drink.name}</h2>
 					<p>{drink.category}</p>
 					<div class="justify-center card-actions">
-						<button class="btn btn-outline btn-accent">More info</button>
+						<a class="btn btn-secondary btn-outline" href={`/cocktails/${drink.id}`}>More info</a>
 					</div>
 				</div>
 			</div>

@@ -4,6 +4,7 @@ export type IngredientType = {
 };
 
 export type DrinkType = {
+	id: number;
 	name: string;
 	instructions: string;
 	ingredients: IngredientType[];
